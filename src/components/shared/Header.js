@@ -38,9 +38,6 @@ const unauthenticatedCSS = {
 
 const authenticatedOptions = (
 	<>
-	<div className='m-2'>
-		<Search/>
-	</div>
 	<div>
 		<Nav.Link>
 			<Link to='my-profile' style={linkStyle} className='m-2'>
