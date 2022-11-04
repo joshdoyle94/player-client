@@ -46,7 +46,7 @@ const NewReviewModal = (props) => {
     }
 
     return (
-        <Modal show={ show } onHide= { handleClose }>
+        <Modal show={ show } onHide={ handleClose }>
             <Modal.Header closeButton />
             <Modal.Body>
                 <ReviewForm 
