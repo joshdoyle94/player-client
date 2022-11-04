@@ -99,7 +99,9 @@ const App = () => {
 		<Route
             path='/games/:apiId'
             element={
+			<RequireAuth user={user}>
                 <GameShow msgAlert={msgAlert} user={user} />
+			</RequireAuth>
               }
         />
 		<Route

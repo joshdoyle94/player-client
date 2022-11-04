@@ -43,6 +43,11 @@ const authenticatedOptions = (
 			</Link>
 		</Nav.Link>
 		<Nav.Link>
+			<Link to='change-password' style={linkStyle} className='m-2'>
+				Change Password
+			</Link>
+		</Nav.Link>
+		<Nav.Link>
 			<Link to='sign-out' style={linkStyle} className='m-2'>
 				Sign Out
 			</Link>
