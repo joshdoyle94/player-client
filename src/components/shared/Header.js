@@ -72,12 +72,16 @@ const authenticatedOptions = (
 
 const unauthenticatedOptions = (
 	<>
+	<div>
         <Nav.Link style={unauthenticatedCSS}>
 		    <Link to='sign-up' style={linkStyle} className='m-2'>Create Account</Link>
         </Nav.Link>
+	</div>
+	<div>
         <Nav.Link>
 		    <Link to='sign-in' style={linkStyle} className='m-2'>Login</Link>
         </Nav.Link>
+	</div>
 	</>
 )
 
@@ -104,11 +108,7 @@ const Header = ({ user }) => (
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
 		<Navbar.Collapse id='basic-navbar-nav'>
 			<Nav className='ml-auto'>
-				{user && (
-					<span className='navbar-text mr-2'>Welcome, {user.username}</span>
-				)}
-				{/* {alwaysOptions}
-				{user ? authenticatedOptions : unauthenticatedOptions} */}
+				<Search/>
 			</Nav>
 			<Container fluid='md'>
 			<Nav className='justify-content-end'>
