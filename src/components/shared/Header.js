@@ -94,8 +94,11 @@ const Header = ({ user }) => (
 	<Navbar style={ headerStyle } variant='dark' expand='md'>
 		<Navbar.Brand style={ appLogo }>
             <Link to='/' style={logoStyle}>
-                GameShare
+                GameShar
             </Link>
+			<Link to='/' style={logoStyle}>
+				<RiGameFill/>
+			</Link>
         </Navbar.Brand>
 		<Navbar.Toggle aria-controls='basic-navbar-nav' />
 		<Navbar.Collapse id='basic-navbar-nav'>
